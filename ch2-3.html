@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+    <head>
+        <title>Chapter 2 & 3</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:red;
+                margin: 5em;
+                border-width:1px ;
+                border-style: solid;
+                border-color: yellow;
+            }
+
+            h1{
+                color:white;
+                border-width:0em;
+                border-style: solid;
+                border-color: yellow;
+            }
+
+            h2,h3{
+                color:white;
+                border-width:1px;
+                border-style:solid;
+                border-color: yellow;
+            }
+
+            ol{
+                color:white;
+            }
+
+            ul{
+                color:white;
+            }
+            .gb{
+                float: center;
+                width: 33.33%;
+                padding:5px;
+                
+
+            }
+            .gbg{
+                width: 33.33%;
+                padding:5px;
+
+            }
+            .col{
+                clear: both;
+                display:table;
+            }
+
+            .nonum{
+                list-style-type: none;
+            }
+            .tres{
+                list-style-type: "3.";
+            }
+        </style>
+    </head>
+
+
+       
+    <body>
+        <h1>Chapter 2: Algorithm Discovery and Design & Chapter 3:The Efficiency of Algorithms</h1> 
+        <h2>Student:Henry Flores-Acosta</h2>
+        <h3>Chapter 2: Algorithms</h3>
+        <ol>
+            <li> Explain why natural language in not an effective tool for describing algorithm: Natural language can be extremely verbose, causing the resulting algorithms to be rambling, unstructured, and hard to follow. An unstructured, “free-flowing” writing style might be won- derful for novels and essays, but it is horrible for algorithms. The lack of structure makes it difficult for the reader to locate specific sections of the algorithm because they are buried deep within the text. </li>
+            <li>Problem 1:</li>
+            <li class = "nonum">A student has three grades; the final grade is the average of the three List the algorithmic steps to find the final grade:<br> 
+                •Input the first grade.<br>
+                •Input the second grade.<br>
+                •Input the third grade.<br>
+                •Calculate the sum of the three grades by adding them together.<br>
+                •Divide the sum by 3 to find the average grade.<br>
+                •Output the final grade as the average grade calculated in step 5.</li>
+            <br>
+            <li class = "tres">Problem 2:</li>
+            <li class = "nonum">A car owner recorded the car' previous car mileage, current mileage, and the number of gallons of gag the owner filled their tank with.  List the algorithmic steps to find the car's mpg (miles per gallon):<br>
+                •Input the previous car mileage.<br>
+                •Input the current car mileage.<br>
+                •Calculate the difference between the current mileage and the previous mileage.<br>
+                •Input the number of gallons of gas filled.<br>
+                •Divide the difference in mileage by the number of gallons of gas filled to find the car's miles per gallon.<br>
+                •Output the car's miles per gallon.</li>
+        </ol>
+        
+        <h3>Chapter 2: Briefly define:</h3>
+        <ol>
+            <li>Natural Language:The language we speak and write in our everyday lives. (This could be English, Spanish, Arabic, Japanese, Swahili,or any language.) This is an obvious choice because it is the language with which we are most familiar. If we use natural language, then our algorithms would read much the same as a term paper or an essay.</li>
+            <li>Pseudocode:Most computer scientists use a notation called pseudocode to design and represent algorithms. This is a set of English-language constructs designed to more or less resemble statements in a programming language but that do not actually run on a computer. Pseudocode represents a compromise between the two extremes of natural and formal languages.</li>
+            <li> Sequential Operation (Straight-Line lgorithm):A sequential instruction carries out a single well- defined task. When that task is finished, the algorithm moves on to the next operation. Sequential operations are usually expressed as simple declarative sentences.</li>
+            <li>Input:Input operations provide the computing agent with data values from the outside world that it may then use in later instructions.</li>
+            <li>Output:Output operations send results from the computing agent to the outside world. </li>
+            <li>Conditional Statement:Conditional statements are the “question-asking” operations of an algorithm. They allow an algorithm to ask a yes/no question and select the next operation to perform on the basis of the answer to that question. </li>
+            <li>Boolean Condition: An expression that evaluates to either true or false</li>
+            <li>Algorithm Discovery Procces:<br>
+                • Studying the behavior of algorithms to determine if they are correct and efficient (their formal and mathematical properties)<br>
+                • Designing and building computer systems that are able to execute algorithms (their hardware realizations)<br>
+                • Designing programming languages and translating algorithms into these languages so that they can be executed by the hardware (their linguistic realizations)<br>
+                • Identifying important problems and designing correct and efficient software packages to solve these problems (their applications)
+                </li>
+        </ol>
+        <h3>Chapter 3:Briefly Descirbe Or Define</h3>
+        <ol>
+            <li>Why Algorithms Should Be Correct:First and foremost, we expect correctness from our algorithms. An algorithm intended to solve a problem must, again by formal definition, give a result and then halt. But this is not enough; we also want the result to be a correct solution to the problem. You could consider this an inherent property of the definition of an algorithm (like a car being capable of transporting us where we want to go), but it bears emphasizing. An elegant and efficient algorithm that gives wrong results for the problem at hand is worse than useless. It can lead to mistakes that are enormously expensive or even fatal.</li>
+            <li>Why Algorithms Should Be Efficient:Efficiency, in addition to correctness, ease of understanding, and elegance, is an extremely desirable attribute of an algorithm.</li>
+            <li>Program Maintenance:A great deal of time and money are devoted to program maintenance. The person who has to modify a program, either to correct errors or to expand its functionality, often is not the person who wrote the original program. To make program mainte- nance as easy as possible, the algorithm the program uses should be easy to understand.</li>
+            <li>Importance Of Algorithm: Ease Of Understanding:Ease of understanding, clarity, “ease of handling”—whatever you want to call it—is a highly desirable characteristic of an algorithm.</li>
+            <li>Algorithmic Elegance:Elegance is the algorithmic equivalent of style.</li>
+            <li>Sequential Search Algorithm:it is the standard algorithm for searching an unordered list of values</li>
+            <li>Order Of Magnitude:Order of magnitude refers to the class of scale of any numerical value in which each class contains values of a fixed ratio to the class before it. </li>
+            <li>Selection Sort: The selection sort “grows” a sorted subsection of the list from the back to the front.</li>
+            <li>Flop (Floating Point Operation):One way to compare performance among different makes of computers is to give the number of arithmetic operations, such as additions or subtractions of real numbers, that each one can do in 1 second. </li>
+            <li>Teraflop:trillions of floating point opera- tions per second</li>
+            <li>Petaflop:PFLOPS, quadrillions of floating point operations per sec- ond.</li>
+            <li>Parallel processor:Is the coordinated processing of a program by multiple processors that work on different parts of the program, with each processor using its own operating system and memory .</li>
+            <li>Data Cleanup Problem:Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset.</li>
+            <li>Binary Search Algorithm:This is exactly how the binary search algorithm works on a sorted list. It first looks for NUMBER at roughly the halfway point in the list. If the number there equals NUMBER, the search is over. If NUMBER comes numerically before the number at the halfway point, then the search is narrowed to the front half of the list, and the process begins again on this smaller list. If NUMBER comes numerically after the number at the halfway point, then the search is narrowed to the back half of the list, and the process begins again on this smaller list. The algorithm halts when NUMBER is found or when the sublist becomes empty.</li>
+            <li>Pattern Matching:Pattern matching is used to determine whether source files of high-level languages are syntactically correct.</li>
+
+        </ol>
+        <h3>Carl Fried Gauss:</h3>
+        <ol>
+            <li>Give A Brief Overview Of Carl Friedrich Gauss' Mathematics Abilities And Scientific Achievements.:Carl Friedrich Gauss was a German mathematician known for his exceptional talent. He contributed to many fields, including number theory, differential geometry, and celestial mechanics. His achievements include discovering the method of least squares, developing modular arithmetic, and discovering the Law of Quadratic Reciprocity. Gauss is widely regarded as one of the most important mathematicians and scientists in history.
+            </li>
+            <li> Describe Carl Frederich Gauss' Algorithm For Adding Up The Numbers From 1 To 100
+                Set the value of sum to 0
+                Set the value of x to 1
+                While x is less than or equal to 100, do Steps 4 and 5
+                Add x to sum
+                Add 1 to the value of x Print the value of sum Stop
+            </li>
+            <li>What Are Gaussian Optics?:Gaussian optics is a technique in geometrical optics that describes the behaviour of light rays in optical systems by using the paraxial approximation, in which only rays which make small angles with the optical axis of the system are considered.[1] In this approximation, trigonometric functions can be expressed as linear functions of the angles. Gaussian optics applies to systems in which all the optical surfaces are either flat or are portions of a sphere. In this case, simple explicit formulae can be given for parameters of an imaging system such as focal length, magnification and brightness, in terms of the geometrical shapes and material properties of the constituent elements.</li>
+
+            <li>What Is A "Gaussian Blur, And How Is It Used In Digital Image Editing?:The Gaussian blur is a way to apply a low-pass filter in skimage. It is often used to remove Gaussian (i. e., random) noise from the image. For other kinds of noise, e.g. “salt and pepper”, a median filter is typically used.
+            </li>
+        <div class="col">
+            <P>Before Gaussian Blurr</P>
+            <img src="eyeog.jpeg" alt="Before Gaussian Blur" class = gbg>
+            <p>After Gaussian Blurr</p>
+            <img src="gblurreye.jpeg" alt="After Gaussian Blurr" class = gb>
+            
+        </div>
+        </ol>
+
+    <footer>
+        <h3>Source:</h3>
+        <p>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</p>
+        <p><a href = "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Carl Friedrich Gauss</a></p>
+        <p> <a href="https://en.wikipedia.org/wiki/Gaussian_optics#References">Gaussian optics</a></p>
+        <p><a href ="https://datacarpentry.org/image-processing/06-blurring/#:~:text=The%20Gaussian%20blur%20is%20a,median%20filter%20is%20typically%20used.">Gaussian blur</a></p>
+    </footer>
+
+
+    </body>
+
+  
+
+</html>
