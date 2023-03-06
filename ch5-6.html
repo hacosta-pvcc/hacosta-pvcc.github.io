@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+    <head>
+        <title>Chapter 5 & 6</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:navy;
+                margin: 5em;
+                border-width:1px ;
+                border-style: solid;
+                border-color: teal;
+            }
+
+            h1{
+                color:white;
+                border-width:0em;
+                border-style: solid;
+                border-color: teal;
+            }
+
+            h1,h2,h3{
+                color:white;
+                border-width:1px;
+                border-style:solid;
+                border-color: teal;
+            }
+
+            ol{
+                color:white;
+            }
+
+            ul{
+                color:white;
+            }
+            .gb{
+                float: center;
+                width: 33.33%;
+                padding:5px;
+                
+
+            }
+            .gbg{
+                width: 33.33%;
+                padding:5px;
+
+            }
+            .col{
+                clear: both;
+                display:table;
+            }
+
+            .nonum{
+                list-style-type: none;
+            }
+            .tres{
+                list-style-type: "3.";
+            }
+            table{
+                color: white;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th,td{
+                text-align: left;
+            }
+            footer{
+                color: white;
+            }
+        </style>
+    </head>
+
+
+       
+    <body>
+        <h1>Chapter 5:Computer Systems Organization</h1> 
+        <h2>Student:Henry Flores-Acosta</h2>
+        <h3>Von Neumann Computer Architecture, 4 Major Subsystems:</h3> 
+        <ol>
+            <li>Memory</li>
+            <li>Input/Output</li>
+            <li>The Arithmetic/Logic Unit (ALU)</li>
+            <li>The Control Unit</li>
+            
+        </ol>
+        <h3>Von Neumann Computer Architecture, 3 Characteristics:</h3>
+        <ol>
+            <li>The Four major subsystems </li>
+            <li> The Stored Program Concept</li>
+            <li>The Sequential Execution Of Instructions</li>
+        </ol>
+        <h3>Computer Architecture Terms:</h3>
+        <ol>
+            <li>Ram:Computer memory uses an access technique called random access, and the memory unit is frequently referred to as random access memory (RAM).It is s a form of computer memory that can be read and changed in any order, typically used to store working data and machine code. </li>
+            <li>Cache:</li>
+            <li>Principle Of Locality: The High Likelihood That When A Program Fetches A Piece Of Data Or An Instruction:
+                <br> 1.
+                <br>2.
+            </li>
+            <li>Rom:is a special type of random access memory into which information has been prerecorded during manufacture. This infor- mation cannot be modified or removed, only fetched. ROM is used to hold important system instructions and data in a place where a user cannot acci- dentally or intentionally overwrite them.</li>
+            <li>Memory Cell Size:Memory is divided into fixed-size units called cells,.</li>
+            <li>Memory Cell Address:ach cell is associated with a unique identifier called an address. These addresses are the unsigned integers 0, 1, 2, ..., MAX.</li>
+            <li>Maximum Memory Size:This is a total of 2^N memory cells. The value 2^N is called the address space or maximum memory size of the computer.Today, the address space of most computers is at least 236 or about 64 billion bytes, while many processors allow for far more. However, remember that 2^N represents the maximum theoretical memory size; a computer with N address bits does not necessarily come equipped with 2^N memory cells. It simply means that its memory can be expanded to 2^N. </li>
+            <li>Register:Two registers are used to implement the fetch and store operations. Both operations require two oper- ands: the address of the cell being accessed and the value, either the value stored by the store operation or the value returned by the fetch operation.
+                The memory unit contains two special registers whose purpose is to hold these two operands. The memory address register (MAR) holds the address of the cell to be accessed. Because the MAR must be capable of holding any address, it must be at least N bits wide, where 2N is the address space of the computer.
+                The memory data register (MDR) contains the data value being fetched or stored. We might be tempted to say that the MDR should be W bits wide, where W is the cell size. However, as mentioned earlier, on most computers the cell size is only 8 bits, and most data values occupy multiple cells. Thus the size of the MDR is usually a multiple of 8. Typical values of MDR width are 32 and 64 bits, which would allow us to fetch, in a single step, either an integer or a real value, respectively.</li>
+            <li>Fetch:The retrieval of data by a software program, script, or hardware device.</li>
+            <li>Store: Saves the results to a Register or Memory.</li>
+            <li>Memory Access Time:One of the characteristics of random access memory is that the time to carry out either a fetch or a store operation is the same for all 2^N addresses. At current levels of technology, this time, called the (memory access time), which is typically about 5–10 nanoseconds (nanosecond = 1 nsec = 10−9 seconds = 1 billionth of a second). </li>
+            <li>DASD:A direct access storage device (DASD) is one in which, it takes the same amount of time to access every cel, and equal access time, has been eliminated. That is, in a direct access storage device, every unit of information still has a unique address, but the time needed to access that information depends on its physical location and the current state of the device. </li>
+            <li>Arithmetic And Logic Unit (ALU):The arithmetic/logic unit (ALU) is the subsystem that performs such mathematical and logical operations as addition, subtraction, and comparison for equality. </li>
+            <li>Control Unit:The most fundamental characteristic of the Von Neumann architecture is the stored program—a sequence of machine language instructions stored as binary values in memory. It is the task of the control unit to (1) fetch from memory the next instruction to be executed, (2) decode it—that is, determine what is to be done, and (3) execute it by issuing the appropriate command to the ALU, memory, or I/O controllers. These three steps are repeated over and over until we reach the last instruction in the program, typically something called HALT, STOP, or QUIT.</li>
+        </ol>
+        <h1>Chapter 6: </h1>
+        <h3>Four Things The Interface Between The Computer And The Hardware Does:</h3>
+        <ol>
+            <li>Hides from the user the messy details of the underlying hardware</li>
+            <li>Presents information about what is happening in a way that does not require in-depth knowledge of the internal structure of the system</li>
+            <li>Allows easy user access to the resources available on this computer</li>
+            <li>Prevents accidental or intentional damage to hardware, programs, and data</li>  
+        </ol>
+        <h3>Responsibilities Of Systems Software:</h3>
+        <ol>
+           <li>Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture</li>
+           <li>Presents important information to the user in a way that is easy to understand</li>
+           <li>Allows the user to access machine resources in a simple and efficient way</li>
+           <li>Provides a secure and safe environment in which to operate </li>
+        </ol>
+        <h3>Terms:</h3>
+        <ol>
+            <li>Systems Software:System software is a collection of computer programs that manage the resources of a computer and facilitates access to those resources.</li>
+            <li>User Interface:All modern operating systems provide a powerful graph- ical user interface (GUI) that gives the user an intuitive visual overview as well as graphical control of the capabilities and services of the com- puter. Control of the GUI is typically done with keystrokes, mouse clicks, finger taps, voice activation, or biometric scans such as fingerprints.</li>
+            <li>Language Services:These programs, called assemblers, compilers, and interpreters, allow you to write programs in a high-level, user-oriented language rather than the machine language of Chapter 5 and to ex- ecute these programs easily and efficiently. They often include compo- nents such as text editors and debuggers.</li>
+            <li>Memory Managers:These programs allocate memory space for programs and data and retrieve this memory space when it is no longer needed.</li>
+            <li>Information Managers:These programs handle the organization, storage, and retrieval of information on storage devices such as
+                the hard drives, DVDs, flash drives, and tapes described in Sec-
+                tion 5.2.2, as well as information stored remotely in data cen-
+                ters (cloud storage). They allow you to organize your information in an efficient hierarchical manner, using directories, folders, and files and to keep your personal data safe from accidental or intentional misuse.</li>
+            <li>I/O Managers:These software packages allow you to easily and effi- ciently use the many different types of input and output devices that exist on a modern computer system.</li>
+            <li>Scheduler:This system program keeps a list of programs ready to run on the processor, and it selects the one that will execute next. The scheduler allows you to have several different programs active at a single time, for instance, surfing the web while you are waiting for a file to finish printing.</li>
+            <li>Utilities:These collections of library routines provide a wide range of useful services either to a user or to other system routines. Text edi- tors, online help routines, image and sound applications, and control panels are examples of utility routines. Sometimes these utilities are organized into collections called program libraries.</li>
+            <li>Assembly Language:Today, assembly languages are more properly called low-level programming languages.Each symbolic assembly language instruction is translated into exactly one binary machine language instruction.This contrasts with languages like C++, Java, and Python, which are high-level programming languages. </li>
+        </ol>
+        <h3> Functions Of An Operating System</h3>
+        <ol>
+            <li>The User Interface</li>
+            <li>System Security and Protection</li>
+            <li>Efficient Management of Resources</li>
+            <li>The Safe Use of Resources</li>
+        </ol>
+        <h3>Powers Of 10</h3>
+        <table>
+            <tr>
+                <th>Quantity In Bytes</th>
+                <th>Base-10 Value</th>
+                <th>Amount Of Textual Information</th>
+            </tr>
+            <tr>
+                <td>1 Byte</td>
+                <td>10^0</td>
+                <td>One Character</td>
+            </tr>
+            <tr>
+                <td>1 Kilobyte</td>
+                <td>10^3</td>
+                <td>One Typed Page</td>
+            </tr>
+            <tr>
+                <td>1 Megabyte</td>
+                <td>10^6</td>
+                <td>Two Or Three Novels</td>
+            </tr>
+            <tr>
+                <td>1 Gigabyte</td>
+                <td>10^9</td>
+                <td>A Department Libary Or Large Personal Libary</td>
+            </tr>
+            <tr>
+                <td>1 Terabyte</td>
+                <td>10^12</td>
+                <td>The Libary Of A Major Academic Research Universtiy</td>
+            </tr>
+            <tr>
+                <td>1 Petabyte</td>
+                <td>10^15</td>
+                <td>All Printed Material In All Libraries</td>
+            </tr>
+            <tr>
+                <td>1 Exabyte</td>
+                <td>10^18</td>
+                <td>All Words Ever Printed Throughout Human History</td>
+            </tr>
+            <tr>
+                <td>1 Zettabyte</td>
+                <td>10^21</td>
+                <td>As Of 2014, The Total Amount Of Information Stored Globally On The World Wide Web Was About 4-5 Zettabytes</td>
+            </tr>
+            <tr>
+                <td>1 Yottabyte</td>
+                <td>10^24</td>
+                <td>According To An Article In Gizomodo, A Design And Technology Blog, Storing 1 Yottabyte Of Data On Hard Drives Would Require 1 Million Data Centers That Would Fill The States Of Rhode Island And Delaware
+                </td>
+            </tr>
+        </table>
+
+    <footer>
+        <h3>Source:</h3>
+        <p>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</p>
+    </footer>
+
+
+    </body>
+
+  
+
+</html>
