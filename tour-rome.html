@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name:Henry Flores-Acosta
+    DESCRIPTION:This code will find the cost 
+    of a tour of Italy for up to 4 guests, which includes 
+    a flight from JFK in New York City
+    -->
+    <head>
+        <title>Holiday Roma</title>
+        <style>
+            /* General Styles */
+            body {
+                color: darkblue;
+                background-color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            /* CSS to center the "Holiday Roma" header */
+            h1 {
+                text-align: center;
+            }
+            
+            p {
+                font-size: medium;
+            }
+            /* CSS to center the image */
+            img {
+                display: block;
+                margin: auto;
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+            }
+
+            /* CSS for the table */
+            table {
+                margin: auto;
+                border-collapse: collapse;
+                border: 2px solid black;
+                font-size: 15px;
+                max-width: 500px;
+            }
+
+            th, td {
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            form{
+                text-align: center;
+            }
+            .button{
+                font-size: large;
+            }
+        </style>
+        <script type="text/javascript">
+            function calculateTourCost() {
+                // rates variables
+                var airCost = 1200;
+                var hotelCostPerNight = 265;
+                var mealsCostPerDay = 75;
+                var busTourCost = 80;
+                var activitiesCost = 220;
+                var hotelNights = 5;
+
+                // data variables
+                var numGuests = 0;
+                var hotelTotalCost = 0;
+                var mealsTotalCost = 0;
+                var busTourTotalCost = 0;
+                var activitiesTotalCost = 0;
+                var totalCost = 0;
+
+                // calculations
+                numGuests = parseInt(prompt("Enter the number of guests going on the tour (1 - 4):"));
+                hotelTotalCost = hotelNights * hotelCostPerNight;
+                mealsTotalCost = mealsCostPerDay * numGuests * hotelNights;
+                busTourTotalCost = busTourCost * numGuests;
+                activitiesTotalCost = activitiesCost * numGuests;
+                totalCost = airCost * numGuests + hotelTotalCost + mealsTotalCost + busTourTotalCost + activitiesTotalCost;
+
+                // display receipt
+                alert("\n5-Day Rome Tour" +
+                    "\n------------------------------------------" +
+                    "\nNumber of guests: " + numGuests +
+                    "\n------------------------------------------" +
+                    "\nAir cost:     $" + (airCost * numGuests) +
+                    "\nHotel cost:      $" + hotelTotalCost +
+                    "\nMeals cost:      $" + mealsTotalCost +
+                    "\nBus tour cost:   $" + (busTourTotalCost * numGuests) +
+                    "\nActivities cost: $" + (activitiesTotalCost * numGuests) +
+                    "\n-----------------------------------------" +
+                    "\nTotal:           $" + totalCost);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Holiday Roma!</h1>
+        <p>Visit Rome with us! <b>Holiday Roma Tours</b> are the most exciting way to visit this ancient Italian city.
+            Stay in the luxurious<b> Hotel Farnese</b>, enjoy fabulous meals each day, and visit Rome's most renown sites and museums on our <b>Hop On/Hop Off</b> buses. 
+            Your trip will also include a night of musical theater at the <b>Teatro Sistina!</b></p>
+           
+            <br/><br/>
+            <img src="rome.jpg">
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Holiday Roma Tour Rates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Air:</b></td>
+                        <td>Round trip airfare from JFK to Rome</td>
+                        <td>$1200</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hotel:</b></td>
+                        <td>5 nights in 4-star hotel</td>
+                        <td>$265 per night</td>
+                    </tr>
+                    <tr>
+                        <td><b>Meals</b></td>
+                        <td>Includes 5 breakfasts & 5 dinners</td>
+                        <td>$75 per day</td>
+                    </tr>
+                    <tr>
+                        <td><b>Bus Tour:</b></td>
+                        <td>Hop on/Hop off bus: 3-day pass</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td><b>Activities:</b></td>
+                        <td>Includes 1 theater performance & museum tickets</td>
+                        <td>$220</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><i>VAT is included. Alcoholic beverages and tips are not included.</i></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <form>
+                <input type="button" value="Click to calculate Tour Roma tour cost" class="button" onclick="calculateTourCost()" />
+            </form>
+        </body>
+</html>        
