@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+    <head>
+        <title>Chapter 8</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #fff9d0;
+                margin: 5em;
+                border-width:1px ;
+                border-style: solid;
+                border-color: #023020;
+            }
+
+            h1{
+                color:#023020;
+                border-width:0em;
+                border-style: solid;
+                border-color: #023020;
+            }
+            h1,h2,h3,h4,h5{
+                color: #023020;
+            }
+            h1,h2,h3{
+                color:#023020;
+                border-width:1px;
+                border-style:solid;
+                border-color: #023020;
+            }
+
+            ol{
+                color:#023020;
+            }
+
+            ul{
+                color:#023020;
+            }
+            .gb{
+                float: center;
+                width: 33.33%;
+                padding:5px;
+                
+
+            }
+            .gbg{
+                width: 33.33%;
+                padding:5px;
+
+            }
+            .col{
+                clear: both;
+                display:table;
+            }
+
+            .nonum{
+                list-style-type: none;
+            }
+            .tres{
+                list-style-type: "3.";
+            }
+            table{
+                color: #023020;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th,td{
+                text-align: left;
+            }
+            footer{
+                color: #023020;
+            }
+            .topo{
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+
+
+       
+    <body>
+        <h1>Chapter 8: Information Security </h1> 
+        <h2>Student:Henry Flores-Acosta</h2>
+        <h3>Briefly Describe Or Define:</h3> 
+        <ol>
+            <li>Information Security:Information security means protecting data from those who do not have permission to access it.</li>
+            <li>Authentication:Authentication is the process of verifying that you really are the person who has the right to access a particular device, whether it is your local machine or the remote server. </li>
+            <li>Authorization:Authorization governs what an authenticated user is allowed to do. Enforcing authorization rules is also one of the jobs of the operating systemOn your own machine, you may have administrative privileges and be able to see everything on the machine. However, on your banking website, you can only see your own account information, and you are not allowed to change your balance or your interest rate.</li>
+            <li>Dual Authentication: Some company networks use a dual authentication scheme that works as follows: The legitimate user enters his or her user ID and password. Each user has a small device (or perhaps a smartphone app) that then generates a random sequence of digits, which is good only for a few seconds, that the user must enter. Some websites present the user with an image of text written with distorted letters and the user then has to type the correct text into a textbox on the webpage.</li>
+            <li>Social Engineering:Social engineering is the process of using people to get the information you want.</li>
+            <li>Virus:A virus is a computer program that, like a biological virus, infects a host computer and then spreads. It embeds itself within another program or file. When that program or file is activated, the virus copies itself and attacks other files on the system.  </li>
+            <li>Worm:A worm is very similar to a virus, but it can send copies of itself to other nodes on a computer network without having to be carried by an infected host file. It is a self-replicating piece of software that can travel from node to node without any human intervention.</li>
+            <li>Trojan Horse:A Trojan horse (in the software world, as opposed to Greek mythology) is a computer program that does some legitimate computational task but also, unbeknownst to the user, contains code to perform the same kinds of malicious attacks as viruses and worms—corrupt or delete files, slow down the computer, and the like.</li>
+            <li>Ransomware:ransomware invades the user’s computer, often by means of an infected email attachment. It then encrypts files on that computer, usually with a strong enough encryption algorithm that only the author of the malware software, who holds the decryption key, can unlock the files. The user is then presented with a “ransom note” demanding payment in order to release the files. Next, a screen appears with detailed instructions on how to pay the ransom and the timeframe within which it must be paid.</li>
+            <li>Phishing:Phishing is not a direct attack on a computer. Instead, phishing is a practice used to illegally obtain sensitive information such as credit card numbers, account numbers, and passwords. An email is sent claiming to be from a legitimate organization such as a bank, credit card company, online retailer, government agency, or social media site asking the recipient to click a link to update or verify his or her account information. Often the message contains a warning that your account will be suspended or canceled if you fail to provide this information (although this personal information is already on file with the legitimate organization if indeed you do have an account there). The link takes the unwary user to a fake website that appears to be legitimate and captures the information the user enters. Despite the fact that no legitimate bank or other financial organization ever operates this way, many people fall for this scheme and become victims of identity theft.</li>
+            <li>White Hat: “White hats” are the security experts who try to keep us safe in cyberspace.</li>
+            <li>Black Hat:“Black hats” are the bad guys (or gals!) who try to ferret out computer system weaknesses for financial gain, control, or outright destruction.</li>
+            <li>Encryption/Decryption:encryption is the process of using an algorithm to convert information into a representation that cannot be understood or utilized by anyone without the appropriate decryption algorithm; decryption is the reverse of encryption, using an algorithm that converts the ciphertext back into plain text.</li>
+            <li>Cryptography:Cryptography is the science of “secret writing.” A message (plaintext) is encoded (encrypted) before it is sent, for the purpose of keeping its content secret if it is intercepted by the wrong parties. The encrypted message is called ciphertext. The ciphertext is decoded (decrypted) back to plaintext when it is received, in order to retrieve the original information.</li>
+            <li>Symmetric Encryption Algorithm:A symmetric encryption algorithm requires the use of a secret key known to both the sender and the receiver. The sender encrypts the plaintext using the key. The receiver, knowing the key, is easily able to reverse the process and decrypt the message.</li>
+            <li>Caesar Cipher:A Caesar cipher, also called a shift cipher, involves shift- ing each character in the message to another character some fixed distance farther along in the alphabet.</li>
+            <li>Block Cipher:In a block cipher, a group or block of plaintext letters gets encoded into a block of ciphertext, but not by substituting one charac- ter at a time for each letter. Each plaintext character in the block contributes to more than one ciphertext character, and each ciphertext character is the result of more than one plaintext letter. It is as if each plaintext character in a block gets chopped into little pieces, and these pieces are scattered among the ciphertext characters in the corresponding block.</li>
+            <li>Data Encryption Standard (DES):DES (Data Encryption Standard) is an encryption algorithm developed by IBM in the 1970s for the U.S. National Bureau of Standards (now called the U.S. National Institute of Standards and Technology, or NIST), and is certified as an international standard by the International Organization for Standard- ization, or ISO (the same organization that certifies the MP3 digital audio format, as discussed in Chapter 4). One might expect this internationally standard algorithm to rest upon some extremely complex and obscure oper- ations, but the DES algorithm actually uses very simple operations—how- ever, it uses them over and over.
+                DES was designed to protect electronic information, so the plaintext is a binary string of 0s and 1s, just as it is stored in a computer. As we learned in Chapter 4, this means that ordinary text has already undergone an encoding using ASCII or Unicode to convert characters to bit strings.</li>
+            <li>Public Key System:In a public- key system, the encryption key for messages to go to a particular receiver is broadcast to everyone, but the decryption key cannot be derived from it and is known only by the receiver.</li>
+            <li>Embedded Computers:Embedded computers are computational devices such as chips, pro- cessors, or computers that are embedded within another system. Unlike a general-purpose computer that can be programmed to do many different things, embedded computers usually perform just one or two tasks as part of the system in which they occur. </li>
+        </ol>
+        <h3>Briefly describe how a text file can be hidden in a steganographic image: </h3>
+        <ol>
+            <li>steganography has again come into favor in the form of hidden text within images posted on the web.A text file can be hidden in an image file by changing (if needed) the least signifi- cant bit of each byte of the image file to match the binary form of the characters in the text.  </li>
+        </ol>
+        <h3>List six ways to protect yourself from most cyber attacks (see page 406)</h3>
+
+        <ol>
+            <li>Be sure your computer has up-to-date antivirus software from a repu- table company. Such software can detect worms, viruses, and Trojan horses by the distinctive “signatures” those programs carry. It cleans your machine of infected files. </li>
+            <li>Be sure your computer has up-to-date firewall software from a reputa- ble company. Firewall software guards the access points to your com- puter, blocking communications to or from sites you don’t permit and preventing certain operations from being initiated across the Internet.</li>
+            <li>Be sure your computer has up-to-date antispyware from a reputable company. Antispyware routinely scans your computer for any “spyware” programs that may have infected your machine—programs that capture information on what websites you have visited and what passwords and credit card numbers you have used.</li>
+            <li> Set your browser to use a pop-up blocker. A pop-up is a small window that “pops up” on the webpage your browser is currently displaying. Most pop-ups are simply annoying advertising, but some contain links, perhaps disguised as “Close” buttons, that download a virus to your machine.</li>
+            <li>Always install the latest security patches or updates to your operating system; better yet, set your machine to install automatic updates.</li>
+            <li>Don’t send personal or financial information in response to any email (“My wealthy Nigerian uncle left me a fortune that I am willing to share with you but I need your account number ...”).</li>
+        </ol>
+        <h3>Discover Crypt & Brackets</h3>
+        <h4>Brackets:</h4>
+        <ol>
+            <li>What is Brackets?
+                <br>
+                Brackets is a source code editor with a primary focus on web development.
+            </li>
+            <li>How much does it cost?
+                <br>
+                it is free and open-source software
+            </li>
+            <li>Describe several extensions you can download to enhance Brackets:
+                <br>
+                •Extension:Dark and Green
+                <br>
+                -Description:This theme is my first one, hope you like it! It's an dark theme with an scheme of my favorite colours, green and purple
+                Keywords: theme green black dark
+                <br>
+                •Extension:Dark and Green
+                <br>
+                -Description:Hide Status Bar 
+                <br>
+                •Extension:External Changes Dialog
+                <br>
+                -Description:Removing “External changes” dialog by automatically clicking on “Cancel” button
+                Keywords: external changes dialog remove starboy        
+            </li>
+        </ol>
+        <h4>Play the Crypt Games:</h4>
+        <ol>
+            <li>Easy Ciphers Game:PIG PEN
+                <br>
+                The Pig Pen Cipher is a type of simple substitution cipher in which letters of the alphabet are switched with symbols. When solving the Pig Pen Cipher, the player is given an encrypted message and a cipher. To decrypt the message, the player will find the symbol from the encryped message on the cipher to find the decrypted letter.
+            </li>
+            <li>Nomal Ciphers Game:RAIL FENCE
+                <br>
+                The Rail Fence Cipher, also known as the zigzag cipher, is a type of transposition cipher.When solving the Rail Fence Cipher, the player is given an encrypted message and a amount of rails. The groups of scrambled words are assmbled according to the rows, which has already been done in the game. To decrypt the message, the player will need read down and up each row, like a zigzag!
+            </li>
+            <li>Hard Ciphers Game:COLUMNAR TRANSPOSITION
+                <br>
+                The Columnar Transposition Cipher is a type of transposition cipher, also known as a row column transposition cipher.When solving the Columnar Transposition Cipher, the player is given an encrypted message and a keyword. To decrypt the message, the player will need to take the key word, write it out, and letter each number it according to its alphabetic order (ex: blue = 1342). In the encrypted message given, the number of groups of letters represents how long the keyword is (ex: blue = 4 groups of scrambled letters) and the number of letters in each groups represents the number of columns. Take each group out of numerical and put it in order according to the way the keyword is spelled.
+            </li>          
+        </ol>
+        <h4>My Opinion:</h4>
+        <ol>
+            <li>It was a very well-made challenging experience. She could improve the experience by being more precise about where the instructions for the challenges are.
+            </li>
+            <li>Yes, it is an entertaining way to delve into cryptography. 
+            </li>
+            <li>It seems a bit old school but, it works great</li>
+        </ol>
+    <footer>
+        <h3>Source:</h3>
+        <p>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</p>
+    </footer>
+
+
+    </body>
+
+  
+
+</html>
