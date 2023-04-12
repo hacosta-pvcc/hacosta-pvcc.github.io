@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+    <head>
+        <title>Chapter 9 & 10</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:black;
+                margin: 5em;
+                border-width:1px ;
+                border-style: solid;
+                border-color: yellow;
+            }
+
+            h1{
+                color:white;
+                border-width:0em;
+                border-style: solid;
+                border-color: yellow;
+            }
+
+            h2,h3{
+                color:white;
+                border-width:1px;
+                border-style:solid;
+                border-color: yellow;
+            }
+
+            h4{
+                color:white;
+            }
+
+            ol{
+                color:white;
+            }
+
+            ul{
+                color:white;
+            }
+            .gb{
+                float: center;
+                width: 33.33%;
+                padding:5px;
+                
+
+            }
+            .gbg{
+                width: 33.33%;
+                padding:5px;
+
+            }
+            .col{
+                clear: both;
+                display:table;
+            }
+
+            .nonum{
+                list-style-type: "Q:";
+            }
+            .tres{
+                list-style-type: "3.";
+            }
+            .nonuma{
+                list-style-type: "A:";
+            }
+            tr,th{
+                color: white;
+            }
+            footer{
+                color: white;
+            }
+        </style>
+        
+    </head>
+
+
+       
+    <body>
+        <h1>Chapter 9: Introduction to High Level Languages</h1> 
+        <h1>Chapter 10: Tower of Babel: Programming Languages </h1>
+        <h2>Student:Henry Flores-Acosta</h2>
+        <h3>Chapter 9: Introduction to High Level Languages</h3>
+        
+        <h4>List four disadvantages of using assembly language:</h4>
+        <ol>
+            <li>The programmer must “manually” manage the movement of data items between and among memory locations and registers (although such data items can be assigned mnemonic names).</li>
+            <li>The programmer must take a microscopic view of a task, breaking it down into tiny subtasks—ADD, COMPARE, INCREMENT—that direct what is going on in individual memory locations and registers.</li>
+            <li>An assembly language program is machine specific.</li>
+            <li>Statements are not natural-language-like (although operations are given mnemonic code words as an improvement over a string of bits).</li>
+        </ol>
+
+        <h4>List four expectations programmer have for writing programs in a high-level language ("third generation" language):</h4>
+        <ol>
+            <li>The programmer need not manage the details of the movement of
+                data items within memory or pay any attention to exactly where those items are stored.</li>
+            <li>The programmer can take a macroscopic view of tasks, thinking at a higher level of problem solving (add B and C, and call the result A). The “primitive operations” used as building blocks in algorithm con- struction (see Chapter 1) can be larger.</li>
+            <li>Programs are portable rather than machine specific.</li>
+            <li>Programming statements are closer to natural language and use stan- dard mathematical notation.</li>
+        </ol>
+
+        <h4>Briefly describe or define:</h4>
+        <ol>
+            <li>Object code:There is a price to pay for this higher level of abstraction. When we moved from machine language to assembly language, we needed a piece of system software—an assembler—to translate assembly language instructions into binary machine language instructions (object code).</li>
+            <li>Source code:Now that we have moved up another layer with regard to the language in which we communicate, we need a different type of translator to convert our high-level language instructions into machine language instructions. This new type of translator is called a com- piler. Rather than doing the entire translation job right down to object code, a compiler often translates high-level language instructions (source code) only into assembly language (the hard part of the translation). </li>
+            <li>Procedural language:Most of today’s popular high-level programming languages fall into the same philosophical family; they are procedural languages (also called imperative languages). A program written in a procedural language consists of sequences of statements that manipulate data items. The program- mer’s task is to devise the appropriate step-by-step sequence of “imperative commands”—instructions in the programming language—that, when carried out by the computer, accomplish the desired task.</li>
+            <li>Integrated Development Environment (IDE):The IDE lets the programmer perform a number of tasks within the shell of a single application program, rather than having to use a separate program for each task.</li>
+            <li>Software development life cycle:The overall sequence of steps needed to complete a large-scale software project</li>
+            <li>Waterfall model of software development:hink of a series of waterfalls moving a river down and down through various plateaus. In the soft- ware development process, these plateaus would be the feasibility study, problem specification, program design, and so on This imagery suggests that software development is a com- pletely sequential process, that is, one step must be completed before mov- ing on to the next, and that previous steps are never revisited.  </li>
+            <li>Agile model of software development:he Merriam-Webster online dictionary defines the word agile as “marked by ready ability to move with quick easy grace; having a quick, resourceful and adaptable character.” This suggests flexibility, nimbleness, and the ability to adjust to changes.</li>
+        </ol>
+
+        <h4>Describe each of these components of the software development life cycle:</h4>
+        <ol>
+            <li>Feasibility study:The feasibility study evaluates a proposed project and compares the costs and benefits of various solutions. </li>
+            <li>Problem specification:If it is determined that the project is feasible and will benefit from a computer solution, and that software devel- opment is to go forward, we move on to the problem specification phase. Problem specification involves developing a clear, concise, and unambiguous statement of the exact problem the software is to solve. </li>
+            <li>Program design: Now that it is clear what is to be done, the program design phase is the time to plan how it is to be done. In a traditional programming approach, the divide-and-conquer strategy (also called top-down decomposition) comes into play. Tasks are broken down into subtasks, which are broken down into sub-subtasks, and so on, until each piece is small enough to code comfortably. These pieces work to- gether to accomplish the overall job. In an object-oriented program- ming approach, the appropriate objects are identified, together with their data and the subtasks they must perform. This allows classes to be designed with variables to store the data, and functions (also called methods) to carry out these subtasks. Objects from these classes cooper- ate to accomplish the total job. </li>
+            <li>Algorithm selection: Once the various sub- tasks have been identified, algorithms must be found to carry them out. </li>
+            <li>Coding: Coding is the process of converting the detailed designs into com- puter code. If the design has been carefully developed, this should be a relatively routine job. Perhaps reusable code can be pulled from a program library, or a useful class can be employed.  </li>
+            <li>Debugging:Debugging is the process of locating and correcting program errors, and it can be a slow and expensive operation that requires as much effort as writing the program in the first place. </li>
+            <li>Testing:Even though a program produces correct answers for 1, 5, or even 1,000 data sets, how can we be sure that it is 100% correct and will work on all data? One approach, called empirical testing, is to design a special set of test cases, called a test suite, and run the program using this special test data. Test data that is carefully chosen to exercise all the different logic paths through a program can help uncover errors.</li>
+            <li>Verification:Program verification can be used to prove that if the input data to a program satisfies certain condi- tions, then, after the program has been run on this data, the output data satisfies certain other conditions.</li>
+            <li>Documentation:Program documentation is all of the written and online material that makes a program understandable.</li>
+        </ol>
+
+        
+        <h3>Chapter 10: Tower of Babel: Programming Languages</h3>
+        <h4>Questions & Answers:</h4>
+        <ol>
+            <li class="nonum">Why does the textbook refer to "the Tower of Babel" regarding computer languages?</li>
+            <li class="nonuma">The biblical story of the Tower of Babel takes place at a time when “the whole earth had one language and the same words.” The people began to build a city with a mighty tower when, suddenly, everyone began speaking in different tongues and could no longer communicate. They became con- fused, abandoned the tower, and scattered “over the face of all the earth.” A shared enterprise was impossible to pursue without the mutual understand- ing fostered by a common language, and (the message this story was intend- ed to convey) the power of what people could do was thus forever limited.
+                Similarly, it might seem that having all computer programs written in the same programming language would have an appealing simplicity. </li>
+            <br>
+            <li class="nonum">Why isn't there just one computer programming language?</li>
+            <li class="nonuma">There are multiple programming languages not so much because there are tasks that one language cannot do but because each language was designed to meet the specific needs of one particular area of application. Consequently, one language might be better suited than others for writing certain kinds of programs.</li>
+            <br>
+            <li class="nonum">Why didn't FORTRAN use the less than ( < ) symbol when comparing two numbers?</li>
+            <li class="nonuma">Early versions of Fortran required all variable identifiers to be uppercase. Also it did not allow the use of mathematical symbols such as < to compare two quantities; the keypunches that were used to create the punched cards on which early Fortran programs were submitted to the computer had no such symbols. </li>
+            <br>
+            <li class="nonum">What was COBOL designed for?</li>
+            <li class="nonuma">COBOL was designed to serve business needs such as managing inventories and payrolls.</li>
+            <br>
+            <li class="nonum">What was the language, C, designed for?</li>
+            <li class="nonuma"> It was originally designed for systems programming, in particular for writing the operating system UNIX.</li>
+            <br>
+            <li class="nonum">What is the difference between C and C++?</li>
+            <li class="nonuma">The C++ language was developed in the early 1980s by Bjarne Stroustrup, also at AT&T Labs. C++ is in fact a “superset” of C, mean- ing that all of the C language is part of C++. Everything that can be done in C—including the ability to change the contents of specific memory locations—can be done in C++. But C++adds many new features to C, giv- ing it more sophistication and cleaner ways to do certain tasks. The most significant extension of C that C++ provides is the ability to do object- oriented programming.</li>
+            <br>
+            <li class="nonum">Who or what is the language, Ada, named for and why?</li>
+            <li class="nonuma">Ada, after Ada Augusta Byron Lovelace, daughter of the poet Lord Byron and later the wife of Lord Lovelace.</li>
+            <br>
+            <li class="nonum">What is a Java "applet"?</li>
+            <li class="nonuma">Java applets (small applica- tions) are programs designed to run from webpages. Applets are embedded in webpages on central servers; when the user views a webpage with a Java-enabled browser, the applet’s code is temporarily transferred to the user’s system (whatever that system may be) and interpreted/executed by the browser itself.</li>
+            <br>
+            <li class="nonum">How much does Python cost to download, install, and use?</li>
+            <li class="nonuma">However, unlike most of the other languages mentioned here, Python is an open source language. The source code is freely available and can be used, distributed, or modified by anyone</li>
+            <br>
+            <li class="nonum">What is Microsoft. NET?</li>
+            <li class="nonuma">the Microsoft .NET Framework that supports C# and other programming languages. The .NET Framework is essentially a giant collection of tools for software devel- opment. It was designed so that traditional text-based applications, GUI applications, and web-based programs can all be built with equal ease.</li>
+            <br>
+            <li class="nonum">What is SQL and what is it used for?</li>
+            <li class="nonuma">Our first specialized language is SQL, which stands for Structured Query Language. SQL is designed to be used with databases, which are collec- tions of related facts and information.</li>
+            <br>
+            <li class="nonum">What is R and what is it used for?</li>
+            <li class="nonuma">R is a specialized programming language designed for statistical comput- ing and graphics.</li>
+            <br>
+            <li class="nonum">What is Go (or golang) and what is it used for?</li>
+            <li class="nonuma">Go, sometimes referred to as golang, is a programming language devel- oped at Google.Go was born out of frustration with existing languages and environ- ments for systems programming. Programming had become too dif- ficult and the choice of languages was partly to blame. One had to choose either efficient compilation, efficient execution, or ease of pro- gramming; all three were not available in the same mainstream lan- guage. Programmers who could were choosing ease over safety and efficiency by moving to dynamically typed languages such as Python and JavaScript rather than C11or, to a lesser extent, Java.Go is an attempt to combine the ease of programming of an inter- preted, dynamically typed language with the efficiency and safety of a statically typed, compiled language. </li>
+            <br>
+            <li class="nonum">What is Swift and what is it used for?</li>
+            <li class="nonuma">In June 2014, Apple announced a new programming language at its annual Worldwide Developers Conference. The language is called Swift, and it was designed for building apps on the iOS and macOS operating systems, in oth- ers words, for the iPhone/iPad and the Mac. Apple developers had long been using Objective-C, an object-oriented version of the C language. Swift bor- rows much from Objective-C, and can work alongside Objective-C, but with faster performance.</li>
+            <br>
+        </ol>
+       <h4>Briefly describe each of the following alternative programming paradigms:</h4>
+       <ol>
+        <li>Functional programming:A functional programming language views every task in terms of (sur- prise!) functions.</li>
+        <li>Logic programming:Logic programming languages go a step further toward not speci- fying exactly how a task is to be done. In logic programming, various facts are asserted to be true, and on the basis of these facts, a logic program can infer or deduce other facts. </li>
+        <li>Parallel programming:Parallel computing is a type of computation in which many calculations or processes are carried out simultaneously. Large problems can often be divided into smaller ones, which can then be solved at the same time.</li>
+       </ol>
+    <table border="1" style = "text-align:center;" width: "560";>
+       
+        <tr style="font-weight: bold; font-size:192%;">
+            <th colspan="5">Computer Programming Language Comparisons</th>
+       
+        </tr>
+        <tr>
+        <tr>
+            <td>Language</td>
+            <td>Comments</td>
+            <td>Input <br/>Statement(s)</td>
+            <td>Increase by 1</td>
+            <td>Output Statement</td>
+        </tr>
+        <tr>
+            <td>1.Ada</td>
+            <td>--</td>
+            <td>TEXT_IO.PUT <br> INT_IO.GET</td>
+            <td>n:n+1;</td>
+            <td>TEXT_IO.PUT</td>
+        </tr>
+        <tr>
+            <td>2.C++</td>
+            <td>//</td>
+            <td>cin >> n;</td>
+            <td>n = n + 1;</td>
+            <td>
+                cout << endl;  <br>
+                cout << "My favorite number is 1 more than that, " << n << endl; <br>
+                cout << endl << endl;
+            </td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>//</td>
+            <td>n = Convert.ToInt32(Console.ReadLine());</td>
+            <td>n = n + 1;</td>
+            <td>Console.WriteLine();<br>
+                Console.Write("My favorite number is ");<br>
+                Console.WriteLine("1 more than that, " + n);<br>
+                Console.WriteLine();<br>
+                Console.WriteLine();
+            </td>
+        </tr>
+       
+        <tr>
+            <td>Java</td>
+            <td>// </td>
+            <td>Scanner inp = new Scanner(System.in);<br>
+                n = inp.nextInt();
+            </td>
+            <td>n = n + 1;</td>
+            <td>System.out.println();<br>
+                System.out.println("My favorite number is 1 more " + "than that, " + n); <br>
+                System.out.println(); <br>
+                System.out.println();
+            </td>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>#</td>
+            <td>n = int(input("What is your favorite number? "))</td>
+            <td>n = n + 1</td>
+            <td>
+                print()<br>
+                print("My favorite number is 1 more than that,", n)<br>
+                
+                To pause the program until the user presses Enter key:<br>
+                input("\n\nPress the Enter key to exit")  
+                </td>
+        </tr>
+
+    </table>
+        
+    
+    
+    
+    
+    <h3>Stack Overflow Q & A:</h3>
+    <ol>
+        <li class = "nonum">What is the purpose of Stack Overflow?</li>
+        <li class = "nonuma">Stack Overflow helps people find the answers they need, when they need them. We're best known for our public Q&A platform that over 100 million people visit every month to ask questions, learn, and share technical knowledge.</li><br>
+        <li class = "nonum">How much research effort is expected of Stack Overflow users?</li>
+        <li class = "nonuma">A lot. Asking a question on Stack Overflow should be the last step in your process for finding an answer—if the information that you need already exists, then you should be able to find it before asking.</li><br>
+        <li class = "nonum">Why should I post complete errors? Why isn't the message itself enough?</li>
+        <li class = "nonuma">A generic message like "No such file or directory" only says something about the specific error code that was returned, but nothing about where, why or how it happened.The rest of the error message is vital for filling in the gaps. It's especially important to copy-paste everything exactly as it is, because even tiny changes in punctuation provide important information.</li><br>
+        <li class = "nonum">Why should I not upload images of code/data/errors?</li>
+        <li class = "nonuma">The first reason is that links to images fail. The second reason is that text on images is not searchable. The third reason is that it gives you an incentive 'not to try'; simply show us a screenshot of your code and call it a day.</li> <br>
+        <li class = "nonum">Why is "Can someone help me?" not an actual question?</li>
+        <li class = "nonuma">Stack Overflow is a question & answer site. You may think that you have asked a reasonable, answerable question, but a question like "Can someone help me"? really doesn't qualify. First, a bit of background: The purpose of Stack Overflow is to create a knowledge repository of solutions to programming problems. Its mantra is "Make the Internet a better place". That means that a primary characteristic of a good question is that it is likely to be searched by someone else. "Will you help me do X?" doesn't do that. More than likely, no one will ever be trying to do, and searching for, the exact same thing as you in exactly the same way. </li><br>
+        <li class = "nonum">Under what circumstances may I add "urgent" or other similar phrases to my question, in order to obtain faster answers?</li>
+        <li class = "nonuma">At best this is extra fluff in your question, which gets in the way of your actual question. This makes it harder for people to help you, which makes it less likely that you'll get an answer. Nobody is going to see that you need an answer ASAP and then drop everything they're doing in order to help you. Your emergencies are your own. Alternatively: lack of planning on your part does not constitute an emergency on my part. At worst it'll be seen as very rude. Specifically saying that your needs are urgent or that you need an answer ASAP implies that your time is more valuable than the time of other people asking questions, or of the people answering questions.</li>
+        <li class = "nonum">Advice for non-native English speakers</li>
+        <li class = "nonuma">If you aren't a native English speaker, here are some rules that can improve some of the reactions to your posts, and also the quality of the answers to your questions.(If you are a native English speaker, you should also be following these rules.)Behind the questions and answers on this site, there is a complex reviewing/moderating mechanism, and your extra efforts can make some of that work significantly easier for the rest of us.</li>
+        <li class = "nonum">I want to seed Stack Overflow with questions about my product/project. What do I need to know?</li>
+        <li class = "nonuma"><br>
+            -Can I support my product here? <br>
+            -Tagging<br>
+            -Questions must be on-topic
+            -Don't recreate your documentation on Stack Overflow
+            -Don't recreate your documentation on Stack Overflow
+            -Answer seeding<br>
+            -Don't get your coworkers to vote on your posts
+        </li><br>
+
+ 
+    </ol>
+    <h3>Stack Overflow Ask & Search:</h3>
+    <ol>
+            <li class = "nonum">How to make background-color transparent in css</li>
+        <li class = "nonuma">Set opacity to background by using rgba (a is the opacity)</li><br>
+        <li class = "nonum">What should a Stack Overflow question title do?</li>
+        <li class = "nonuma">Be specific and imagine you’re asking a question to another person.</li><br>
+        <li class = "nonum">What are the steps to writing a good Stack Overflow question?</li>
+        <li class = "nonuma"><br>
+            -Summarize your problem in a one-line title.<br>
+            Describe your problem in more detail.<br>
+            Describe what you tried and what you expected to happen.<br>
+            Add “tags” which help surface your question to members of the community.<br>
+            Review your question and post it to the site.
+            </li>
+
+    </ol>
+    <h3>Stack Overflow Programming Survey:</h3>
+    <ol>
+        <li class = "nonum">How many people answered the 2021 survey?</li>
+        <li class = "nonuma">In May 2021 over 80,000 developers told us how they learn and level up, which tools they’re using, and what they want.</li> <br>
+        <li class = "nonum">What were the top three countries where responses came from?</li>
+        <li class = "nonuma">
+            <br>
+            -United States of America
+            <br>
+            -India
+            <br>
+            -Germany
+        </li><br>
+        <li class = "nonum">What was the age range of coders when they wrote their first line of code?</li>
+        <li class = "nonuma">Coders start young: over 50% of respondents wrote their first line of code between the ages of 11 to 17.</li>
+
+    </ol>
+        
+
+    <footer>
+        <h3>Source:</h3>
+        <p>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</p>
+    </footer>
+
+
+    </body>
+
+  
+
+</html>
