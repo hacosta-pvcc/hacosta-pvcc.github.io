@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+
+<html lang = "en">
+    <head>
+        <title>Chapter 12 & 13 </title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:white;
+                margin: 5em;
+                border-width:1px ;
+                border-style: solid;
+                border-color: purple;
+            }
+
+            h1{
+                color:black;
+                border-width:0em;
+                border-style: solid;
+                border-color: purple;
+            }
+
+            h2,h3{
+                color:black;
+                border-width:1px;
+                border-style:solid;
+                border-color: purple;
+            }
+
+            h4{
+                color:black;
+            }
+
+            ol{
+                color:black;
+            }
+
+            ul{
+                color:black;
+            }
+            .gb{
+                float: center;
+                width: 33.33%;
+                padding:5px;
+                
+
+            }
+            .gbg{
+                width: 33.33%;
+                padding:5px;
+
+            }
+            .col{
+                clear: both;
+                display:table;
+            }
+
+            .nonum{
+                list-style-type: "Q:";
+            }
+            .tres{
+                list-style-type: "3.";
+            }
+            .nonuma{
+                list-style-type: "A:";
+            }
+            tr,th{
+                color: black;
+            }
+            footer{
+                color: black;
+            }
+        </style>
+        
+    </head>
+
+
+       
+    <body>
+        <h1>Chapter 12:Models of Computation</h1> 
+        <h1>Chapter 13: Simulation & Modeling </h1>
+        <h2>Student:Henry Flores-Acosta</h2>
+        <h3>Chapter 12:Models of Computation</h3>
+        
+        <h4>What is the purpose of a model ? </h4>
+        <ul>
+          <li>Models are also an important way of studying many physical and social phenomena. Weather systems, climate cycles, the spread of epidemics, popu- lation demographics, and chemical molecules—all are phenomena that have been studied via modeling.</li>
+        </ul>
+
+        <h4>List four phenomena of a model:</h4>
+        <ol>
+            <li>Captures the essence—the important properties—of the real thing;</li>
+            <li>Probably differs in scale from the real thing;</li>
+            <li>Omits some of the details of the real thing; and</li>
+            <li>Lacks the full functionality of the real thing.</li>  
+        </ol>
+
+        <h4>List four things a computing agent should be able to do:</h4>
+        <ol>
+            <li>Accept input.</li>
+            <li>Store information in memory and retrieve it from memory.</li>
+            <li>Take actions according to algorithm instructions; the choice of what ac- tion to take may depend on the present state of the computing agent, as well as on the input item presently being processed.</li>
+            <li>Produce output.</li>
+        </ol>
+
+        <h4>List four characteristics of an algorithm:</h4>
+        <ol>
+            <li>Be a well-ordered collection;</li>
+            <li>Consist of unambiguous and effectively computable operations;</li>
+            <li>Halt in a finite amount of time; and</li>
+            <li>Produce a result.</li>
+        </ol>
+
+        <h4>What is the "halting problem" with regards to an uncomputable problem?</h4>
+        <ul>
+            <li>The problem Turing found is an ingenious one that itself involves Turing machine computations. A Turing machine that is executing an algorithm (a collection of Turing machine instructions) to solve some task must halt when begun on a tape containing input appropriate to that task. On other kinds of input, the Turing machine may not halt. It is easy enough for us to decide whether any specific configuration of a given Turing machine is a halting configuration. </li>
+        </ul>
+
+        
+        <h3>Chapter 13: Simulation & Modeling</h3>
+        <h4>Define these terms:</h4>
+        <ol>
+            <li>Scientific Method:The scientific method entails observing the behavior of a system and formulating a hypothesis that tries to understand and explain that behavior. We then design and carry out experiments on the system to either prove or disprove the validity of our hypothesis. This is the fundamental way of gaining new scientific knowledge and understanding.</li>
+            <li>Computational Model:computational models, also called simulation models. In a computer simulation, a physical system is not modeled as a small-scale replica but as a set of mathematical equations and/or algorithmic procedures that capture the fundamental properties and behaviors of a system. </li>
+            <li>Discrete event Simulation: A method that is relatively easy to understand and does not require a lot of complex mathematics. It is called discrete event simulation, and it is a very popular and widely used technique for building computational models. In discrete event simulation, we do not model time as continuous, like the falling body modelThat is, we model the behavior of a system only at an explicit and finite set of times. The moments we model are those times when an event takes place, an event being any activ- ity that changes the state of our system. </li>
+            <li>List and describe Seven reasons to construct a Simulation model:
+                <br>
+                •Existence—The system might not yet exist, so it is not possible to experiment directly on the actual system. In fact, we might be using a model to help us with the construction of the system.
+                <br>
+                <br>
+                •Physical realization—The system is not constructed from entities that can be represented by physical objects. For example, it may be a social system (such as welfare policies or labor practices) that can only be simulated on a computer.
+                <br>
+                <br>
+                •Safety—It might be too dangerous to experiment on the actual system or a physical replica. For example, you would not want to try out a new monetary policy that could economically devastate a population or build a nuclear reactor using a new and unproven technology.
+                <br>
+                <br>
+                •Speed of construction—It might take too much time to construct a physical model. Sometimes it is faster to design and build a computer simulation.
+                <br>
+                <br>
+                •Time scale—Some physical systems change too slowly or too quickly. For example, an elementary particle in a high-speed accelerator may decompose in 10215 seconds. At the other end of the time scale, some ecosystems take thousands of years to react to a modification.
+                A simulation can easily model fractions of a second or billions of years because time is simply a parameter in an equation.
+                <br>
+                <br>
+                •Ethical behavior—Some physical models have serious moral and ethi- cal consequences, perhaps the best known being the use of animals in medical research. In this case, a computational model could eliminate a great deal of suffering.
+                <br>
+                <br>
+                •Ease of modification—If we are not happy with the design of a physical model, we need to construct a brand-new one. In a simulation, we only need to change some numerical parameters and rerun the existing model.
+            </li>
+    
+        </ol>
+       <h4>Illustris: "The Mother of All Computations"</h4>
+       <ol>
+        <li>What is Illustris ?: In May 2014, a research group from the Physics department of
+            MIT reported in the journal Nature that they had completed the most detailed and realistic computer simulation ever built to study the formation of the universe. The model, called Illustris, tracked the evolution of the cosmos from a few hundred thousand years after the Big Bang up to the current time, 13.8 billion years later.
+        </li>
+        <li>What fields of science were involved in the Illustris computational model?: Illustris uses equations drawn from physics, astronomy, hydrodynamics, chemistry, and mathematics</li>
+        <li>What does Illustris simulate?: The cube of simulated space that is 350 light years on each side and that contains tens of thousands of galaxies. The model, executed on supercomputers in France and Germany, simulated the expansion of galaxies, the gravitational pull of matter, the for- mation of stars and black holes, and the motions of cosmic gases.</li>
+        <li>How long did the project take?:It took five years for the software teams in the United States, France, and Germany to design, program, and test Illustris, and it required three months
+            of nonstop parallel computing using two supercomputers </li>
+        <li>How many years of gallactic evolution are simulated in Illustris?: 14 billion years of galactic evolution.</li>
+        <li>Illustris was created using two supercomputers. What is a supercomputer?:A supercomputer is a computer with a high level of performance as compared to a general-purpose computer. The performance of a supercomputer is commonly measured in floating-point operations per second instead of million instructions per second.</li>
+       </ol>
+       <h3>Video: </h3>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/NjSFR40SY58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+       </iframe>
+    <footer>
+        <h3>Source:</h3>
+        <p>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</p>
+    </footer>
+
+
+    </body>
+
+  
+
+</html>
